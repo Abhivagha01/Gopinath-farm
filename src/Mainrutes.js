@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { CiLocationOn } from "react-icons/ci";
 function Mainrutes() {
     const Farm = [
@@ -39,17 +40,16 @@ function Mainrutes() {
                             {city.items.map((item, index) => (
                                 <div key={index} className="card col-lg-3 text-center shadow m-auto">
                                     <div className="view overlay">
-                                        <img className="card-img-top m-auto" src={item.Farm_image} alt="Card image cap" />
-                                        <a href="#">
+                                        <img className="card-img-top m-auto" src={item.Farm_image} alt="Cardimagecap" />
+                                        <Link to="/">
                                             <div className="mask rgba-white-slight"></div>
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="card-body">
                                         <h4 className="card-title mb-4">{item.Farm_name}</h4>
                                         <div className="d-lg-flex justify-content-between">
-                                            <button href="" onClick={() => openLocationInMaps(item.location)} style={{background:"red",border:"none"}}className="btn btn-primary bg-none"><CiLocationOn /></button>
-                                            <button href="#" onClick={() => sendWhatsAppMessage(item.Farm_name, item.Address, item.Mobile_no, item.Farm_image)} className="btn btn-success">Book Now</button>
-
+                                            <button  onClick={() => openLocationInMaps(item.location)} style={{background:"red",border:"none"}}className="btn btn-primary bg-none"><CiLocationOn /></button>
+                                            <button  onClick={() => sendWhatsAppMessage(item.Farm_name, item.Address, item.Mobile_no, item.Farm_image)} className="btn btn-success">Book Now</button>
                                         </div>
                                     </div>
                                 </div>

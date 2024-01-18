@@ -1,11 +1,15 @@
 import './App.css';
-import Mainrutes from './Mainrutes';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Mainpage from '../src/Component/Mainpage.jsx'
 function App() {
 
   return (
     <>
-      <Mainrutes />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Mainpage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

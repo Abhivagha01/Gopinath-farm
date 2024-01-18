@@ -1,38 +1,115 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: cover;
+  background: #000;
+  font-family: 'Lato', sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main-wrapper {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  background: #fff;
+  margin: auto;
+}
+
+/* =====slider==== */
+.slide-block {
+	width: 100%;
+  position: relative;
+	height: 250px;
+}
+
+.slide-block img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+/* ====social_link===== */
+.social-outer {
+	margin: 20px 0;
+}
+.social-item .item .icon {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+  margin-right: 10px;
+  background: #85a833;
+  color: #fff;
+	text-align: center;
+	border-radius: 50%;
+  margin-right: 16px;
+}
+.social-item .item .text {
+	font-size: 14px;
+  line-height: 20px;
+}
+/* =======term and condition======= */
+.term-outer {
+	padding: 20px 0;
+}
+.term-outer .term-inner .section-title{position: relative;}
+.term-outer .term-inner .section-title .flag-discount {
+  border-radius: 6px 0 0 6px;
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
+  background:#85a833;
   text-align: center;
+  width: 95%;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.term-outer .term-inner .section-title .flag-discount::before,
+.term-outer .term-inner .section-title .flag-discount::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  display: block;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.term-outer .term-inner .section-title .flag-discount::before {
+  top: 0;
+  border-width: 22px 15px 0 0;
+  border-color: #85a833 transparent transparent transparent;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.term-outer .term-inner .section-title .flag-discount::after {
+  bottom: 0;
+  border-width: 0 15px 22px 0;
+  border-color: transparent transparent #85a833 transparent;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.term-outer .term-inner .term-content ol li {
+	list-style: -webkit-radial-gradient;
+	font-size: 14px;
+	margin-bottom: ;
+	margin-bottom: 8px;
 }
