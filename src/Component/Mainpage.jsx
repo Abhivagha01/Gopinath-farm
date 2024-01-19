@@ -23,6 +23,7 @@ import social3 from '../assets/image/social/s1.png'
 import social4 from '../assets/image/social/s2.png'
 import social5 from '../assets/image/social/s3.png'
 import social6 from '../assets/image/social/s4.png'
+import Mainrutes from '../Mainrutes';
 
 
 function Mainpage() {
@@ -151,45 +152,13 @@ function Mainpage() {
             </div>
             <div className="farm-item d-flex flex-wrap my-2">
               <div className="item">
-                <div className="item-inner">
-                  <div className="image-block">
-                    <img src={s1} alt="farm" />
-                  </div>
-                  <div className="farm-name">Malbar Hill Apartment</div>
-                  <div className="farm-button d-flex justify-content-between align-items-center">
-                    <div className="location"><i class="fas fa-globe"></i></div>
-                    <div className="booknow"><i class="fas fa-bookmark"></i>Book Now</div>
-                  </div>
-                </div>
-              </div>
-              <div className="item">
-                <div className="item-inner">
-                  <div className="image-block">
-                    <img src={s1} alt="farm" />
-                  </div>
-                  <div className="farm-name">Malbar Hill Apartment</div>
-                  <div className="farm-button d-flex justify-content-between align-items-center">
-                    <div className="location"><i class="fas fa-globe"></i></div>
-                    <div className="booknow"><i class="fas fa-bookmark"></i>Book Now</div>
-                  </div>
-                </div>
-              </div>
-              <div className="item">
-                <div className="item-inner">
-                  <div className="image-block">
-                    <img src={s1} alt="farm" />
-                  </div>
-                  <div className="farm-name">Malbar Hill Apartment</div>
-                  <div className="farm-button d-flex justify-content-between align-items-center">
-                    <div className="location"><i class="fas fa-globe"></i></div>
-                    <div className="booknow"><i class="fas fa-bookmark"></i>Book Now</div>
-                  </div>
-                </div>
+              <Mainrutes/>
               </div>
             </div>
           </div>
         </div>
       </div>
+     
 
     </div>
   )
