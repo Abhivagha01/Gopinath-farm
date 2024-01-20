@@ -1,21 +1,5 @@
 import React from 'react'
-import Ahmedabad1 from '../src/assets/image/ahemedabad/ROYAL VILLA AD...jpg'
-import Lonavala1 from '../src/assets/image/lonavala/Lichi Villa.jpg'
-import Lonavala2 from '../src/assets/image/lonavala/Dilux villa.jpg'
-import Lonavala3 from '../src/assets/image/lonavala/Lonavala Tha prism villa.jpg'
-import Lonavala4 from '../src/assets/image/lonavala/Lonavala villa 123.jpg'
-import Lonavala5 from '../src/assets/image/lonavala/Seeya villa.jpg'
-import Ad1 from '../src/assets/image/adajan dandi/Ankur villa 3bhk.jpg'
-import Ad2 from '../src/assets/image/adajan dandi/LEMON VILLA.jpg'
-import Ad3 from '../src/assets/image/adajan dandi/Pal villa. Dandi rod.jpg'
-import maha1 from '../src/assets/image/mahableswar/Stobery villa.jpg'
-import nava1 from '../src/assets/image/navsari/Drim villa Navsari.jpg'
-import nava2 from '../src/assets/image/navsari/valafarmhouse1.jpg'
-import nava3 from '../src/assets/image/navsari/Vala farm house B.jpg'
-import Raja1 from '../src/assets/image/rajasthan/RJ hors villa.jpg'
-import sapu1 from '../src/assets/image/saputara/tent City saputara.jpg'
-import sapu2 from '../src/assets/image/saputara/Vanvaso saputara.jpg'
-import wada1 from '../src/assets/image/wada/kavya villa wada.jpg'
+
 import './App.css'
 
 function Mainrutes() {
@@ -200,6 +184,19 @@ function Mainrutes() {
                 },
             ],
         },
+        {
+            id: 10,
+            type: "Surat",
+            items: [
+                {
+                    id: 1,
+                    Farm_name: "Castilo villa",
+                    Farm_image: surat1,
+                    Mobile_no: "90819 26237",
+                    city: "Surat"
+                },
+            ],
+        },
     ];
 
     function openLocationInMaps(locationURL) {
@@ -215,52 +212,8 @@ function Mainrutes() {
 
     return (
         <div>
-            {Farm.map((farmType) => (
-                <div key={farmType.id} className="item">
-                    <div className="item-inner">
-                        <div className="image-block">
-                            <img src={farmType.items[0].Farm_image} alt="farm" />
-                        </div>
-                        <div className="farm-name">{farmType.items[0].Farm_name}</div>
-                        <div className="farm-button d-flex justify-content-between align-items-center">
-                            <div className="location" onClick={() => openLocationInMaps(farmType.items[0].location)}>
-                                <i className="fas fa-globe"></i>
-                                {farmType.items[0].city}
-                            </div>
-                            <div className="booknow" onClick={() => sendWhatsAppMessage(farmType.items[0].Farm_name, farmType.items[0].Address, farmType.items[0].Mobile_no)}>
-                                <i className="fas fa-bookmark"></i>
-                                Book Now
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            ))}
+           
 
-            {/* <div className="row mt-4">
-                {Farm.map((city, cityIndex) => (
-                    <div key={cityIndex}>
-                        <div className="row mt-4">
-                            {city.items.map((item, index) => (
-                                <div key={index} className="card col-lg-3 text-center shadow m-auto">
-                                    <div className="view overlay">
-                                        <img className="card-img-top m-auto" src={item.Farm_image} alt="Cardimagecap" />
-                                        <Link to="/">
-                                            <div className="mask rgba-white-slight"></div>
-                                        </Link>
-                                    </div>
-                                    <div className="card-body">
-                                        <h4 className="card-title mb-4">{item.Farm_name}</h4>
-                                        <div className="d-lg-flex justify-content-between">
-                                            <button onClick={() => openLocationInMaps(item.location)} style={{ background: "red", border: "none" }} className="btn btn-primary bg-none"><CiLocationOn /></button>
-                                            <button onClick={() => sendWhatsAppMessage(item.Farm_name, item.Address, item.Mobile_no, item.Farm_image)} className="btn btn-success">Book Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                ))}
-            </div > */}
         </div >
     )
 }

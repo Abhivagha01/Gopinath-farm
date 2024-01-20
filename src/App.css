@@ -131,7 +131,10 @@ li {
   border-radius: 6px;
   margin: 0 6px;
 }
-
+.farm-outer .farm-item a{
+  display: block;
+  width: 100%;
+}
 .farm-item .item .item-inner .image-block {
   position: relative;
   overflow: hidden;
@@ -163,16 +166,20 @@ li {
   color: #85a833;
   background: #e4f1ec;
   line-height: 30px;
+  border-radius: 50%;
   width: 30px;
+  margin-right: 6px;
   text-align: center;
   border-radius: 4px;
   height: 30px;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
-.farm-item .item .item-inner .farm-button .booknow {
+.farm-item .item .item-inner .farm-button .booknow,
+.farm-item .item .item-inner .farm-button .location {
   color: #85a833;
   background: #e4f1ec;
+  cursor: pointer;
   padding: 4px 10px;
   font-size: 14px;
   font-weight: 500;

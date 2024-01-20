@@ -23,9 +23,18 @@ import social3 from '../assets/image/social/s1.png'
 import social4 from '../assets/image/social/s2.png'
 import social5 from '../assets/image/social/s3.png'
 import social6 from '../assets/image/social/s4.png'
-import Mainrutes from '../Mainrutes';
-
-
+import mediumvilla from '../../src/assets/image/medium budget/Ankur villa 3bhk.jpg'
+import premiumvilla from '../assets/image/premium villa/Holiday villa RD.jpg'
+import highvilla from '../assets/image/high/Shubh nivas farm house.jpg'
+import ahemedabad from '../../src/assets/image/ahemedabad/AD Royal villa.jpg'
+import lonavala from '../assets/image/lonavala/Seeya villa.jpg'
+import adajandandi from '../assets/image/adajan dandi/LEMON VILLA.jpg'
+import mahabaleswar from '../assets/image/mahableswar/Stobery villa.jpg'
+import navsari from '../assets/image/navsari/Drim villa Navsari.jpg'
+import rajasthan from '../assets/image/rajasthan/RJ hors villa.jpg'
+import saputara from '../assets/image/saputara/tent City saputara.jpg'
+import wada from '../assets/image/wada/kavya villa wada.jpg'
+import surat from '../assets/image/kamrej/Shubh nivas farm house.jpg'
 function Mainpage() {
 
   const Imagearray = [
@@ -41,6 +50,8 @@ function Mainpage() {
     lazyLoad: true,
     dots: false,
     autoplay: true,
+    autoplayTimeout: 4000,
+    autoplaySpeed: 800,
     responsive: {
       0: {
         items: 1
@@ -151,14 +162,163 @@ function Mainpage() {
               <div class="flag-discount">Our Farms</div>
             </div>
             <div className="farm-item d-flex flex-wrap my-2">
-              <div className="item">
-              <Mainrutes/>
-              </div>
+              <Link to="/ahemedabad">
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="image-block">
+                      <img src={ahemedabad} alt="ahemedabad-farmfarm" />
+                    </div>
+                    <div className="farm-name">AD Royal villa</div>
+                  </div>
+                </div>
+              </Link>
+              <Link to="/lonavala">
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="image-block">
+                      <img src={lonavala} alt="lonavala-farmfarm" />
+                    </div>
+                    <div className="farm-name">Seeya villa</div>
+                  </div>
+                </div>
+              </Link>
+              <Link to="/adajandandi">
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="image-block">
+                      <img src={adajandandi} alt="adajandandi-farmfarm" />
+                    </div>
+                    <div className="farm-name">Lemon Villa</div>
+                  </div>
+                </div>
+              </Link>
+              <Link to="/mahabaleswar">
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="image-block">
+                      <img src={mahabaleswar} alt="mahabaleswar-farmfarm" />
+                    </div>
+                    <div className="farm-name">Stobery  Villa</div>
+                  </div>
+                </div>
+              </Link>
+              <Link to="/navsari">
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="image-block">
+                      <img src={navsari} alt="navsari-farmfarm" />
+                    </div>
+                    <div className="farm-name">Dream  Villa</div>
+                  </div>
+                </div>
+              </Link>
+              <Link to="/rajasthan">
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="image-block">
+                      <img src={rajasthan} alt="rajasthan-farmfarm" />
+                    </div>
+                    <div className="farm-name">RJ hors villa</div>
+                  </div>
+                </div>
+              </Link>
+              <Link to="/saputara">
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="image-block">
+                      <img src={saputara} alt="saputara-farmfarm" />
+                    </div>
+                    <div className="farm-name">Tent City </div>
+                  </div>
+                </div>
+              </Link>
+              <Link to="/wada">
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="image-block">
+                      <img src={wada} alt="wada-farmfarm" />
+                    </div>
+                    <div className="farm-name">Kavya Villa</div>
+                  </div>
+                </div>
+              </Link>
+              <Link to="/surat">
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="image-block">
+                      <img src={surat} alt="surat-farmfarm" />
+                    </div>
+                    <div className="farm-name">Shubh nivas farm house</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="farm-outer">
+          <div className="container">
+            <div className="section-title">
+              <div class="flag-discount">Our Premium Villa</div>
+            </div>
+            <div className="farm-item d-flex flex-wrap my-2">
+              <Link to="/premiumvilla">
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="image-block">
+                      <img src={premiumvilla} alt="premiumvilla-farmfarm" />
+                    </div>
+                    <div className="farm-name">Holiday villa RD</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="farm-outer">
+          <div className="container">
+            <div className="section-title">
+              <div class="flag-discount">Our High Villa</div>
+            </div>
+            <div className="farm-item d-flex flex-wrap my-2">
+              <Link to="/highvilla">
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="image-block">
+                      <img src={highvilla} alt="highvilla-farmfarm" />
+                    </div>
+                    <div className="farm-name">Shubh Nivas farm house</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="farm-outer">
+          <div className="container">
+            <div className="section-title">
+              <div class="flag-discount">Our Medium Villa</div>
+            </div>
+            <div className="farm-item d-flex flex-wrap my-2">
+              <Link to="/mediumvilla">
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="image-block">
+                      <img src={mediumvilla} alt="medium-farmfarm" />
+                    </div>
+                    <div className="farm-name">Ankur Villa 3bhk</div>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-     
+
+
+
+
 
     </div>
   )
