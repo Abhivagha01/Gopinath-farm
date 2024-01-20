@@ -96,10 +96,9 @@ li {
 }
 
 .term-outer .term-inner .term-content ol li {
-  list-style: -webkit-radial-gradient;
   font-size: 14px;
-  margin-bottom: ;
   margin-bottom: 8px;
+  list-style: disc;
 }
 
 .social-outer .social-inner .social-icon ul li img {
@@ -119,9 +118,21 @@ li {
   width: 100%;
 }
 
+.main-wrapper .farm-item {
+  padding: 20px 0;
+}
+
+.farm-item .item {
+  margin-bottom: 30px;
+}
+
 @media(max-width:500px) {
   .farm-outer .farm-item .item {
     width: 100%;
+  }
+
+  .farm-item .item {
+    margin-bottom: 25px;
   }
 }
 
@@ -131,10 +142,12 @@ li {
   border-radius: 6px;
   margin: 0 6px;
 }
-.farm-outer .farm-item a{
+
+.farm-outer .farm-item a {
   display: block;
   width: 100%;
 }
+
 .farm-item .item .item-inner .image-block {
   position: relative;
   overflow: hidden;
@@ -154,11 +167,8 @@ li {
   object-fit: cover;
 }
 
-.farm-item .item .item-inner .farm-name {
-  font-size: 14px;
-  line-height: 40px;
-  font-weight: 500;
-  color: #85a833;
+.farm-item .item {
+  margin-bottom: 30px;
 }
 
 .farm-item .item .item-inner .farm-button .location i {
@@ -188,4 +198,19 @@ li {
 
 .farm-item .item .item-inner .farm-button .booknow i {
   margin-right: 6px;
+}
+
+.main-wrapper .farm-item .farm-name{
+  font-style: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  margin:8px 0;
+  color: #85a833!important;
+}
+
+.main-wrapper .farm-item .farm-name span {
+  font-style: 14px;
+  margin-left: 10px;
+  font-weight: 500; 
+color: rgb(208, 111, 111)!important;
 }

@@ -168,7 +168,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={ahemedabad} alt="ahemedabad-farmfarm" />
                     </div>
-                    <div className="farm-name">AD Royal villa</div>
+                    <div className="farm-name">AD Royal villa <span> [Ahemedabad]</span></div>
                   </div>
                 </div>
               </Link>
@@ -178,7 +178,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={lonavala} alt="lonavala-farmfarm" />
                     </div>
-                    <div className="farm-name">Seeya villa</div>
+                    <div className="farm-name">Seeya villa <span>[Lonavala]</span></div>
                   </div>
                 </div>
               </Link>
@@ -188,7 +188,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={adajandandi} alt="adajandandi-farmfarm" />
                     </div>
-                    <div className="farm-name">Lemon Villa</div>
+                    <div className="farm-name">Lemon Villa <span>[Adajan & Dandi]</span></div>
                   </div>
                 </div>
               </Link>
@@ -198,7 +198,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={mahabaleswar} alt="mahabaleswar-farmfarm" />
                     </div>
-                    <div className="farm-name">Stobery  Villa</div>
+                    <div className="farm-name">Stobery  Villa <span>[Mahabaleshwar]</span></div>
                   </div>
                 </div>
               </Link>
@@ -208,7 +208,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={navsari} alt="navsari-farmfarm" />
                     </div>
-                    <div className="farm-name">Dream  Villa</div>
+                    <div className="farm-name">Dream  Villa <span>[Navasari]</span></div>
                   </div>
                 </div>
               </Link>
@@ -218,7 +218,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={rajasthan} alt="rajasthan-farmfarm" />
                     </div>
-                    <div className="farm-name">RJ hors villa</div>
+                    <div className="farm-name">RJ hors villa <span>[Rajasthan]</span></div>
                   </div>
                 </div>
               </Link>
@@ -228,7 +228,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={saputara} alt="saputara-farmfarm" />
                     </div>
-                    <div className="farm-name">Tent City </div>
+                    <div className="farm-name">Tent City  <span>[Saputara]</span></div>
                   </div>
                 </div>
               </Link>
@@ -238,7 +238,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={wada} alt="wada-farmfarm" />
                     </div>
-                    <div className="farm-name">Kavya Villa</div>
+                    <div className="farm-name">Kavya Villa <span>[Wada]</span></div>
                   </div>
                 </div>
               </Link>
@@ -248,7 +248,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={surat} alt="surat-farmfarm" />
                     </div>
-                    <div className="farm-name">Shubh nivas farm house</div>
+                    <div className="farm-name">Shubh nivas farm house <span>[Surat]</span></div>
                   </div>
                 </div>
               </Link>
