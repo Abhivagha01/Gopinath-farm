@@ -38,11 +38,43 @@ li {
   margin: auto;
 }
 
+header {
+  animation: fadeInUp .5s ease-in-out;
+  animation-name: slideInDown;
+  backdrop-filter: blur(5px);
+  background: rgba(99, 94, 94, 0.916);
+  box-shadow: 0 2px 5px -2px #0000001a;
+  background: #fff6;
+  transition: .5s !important;
+  white-space: nowrap;
+  width: 100%;
+  max-width: 500px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .logo {
+  width: 100px;
+  margin: auto;
+  height: 100px;
+}
+
+header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
 /* =====slider==== */
 .slide-block {
   width: 100%;
   position: relative;
   height: 250px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .slide-block img {
@@ -64,12 +96,16 @@ li {
   color: #fff;
   text-align: center;
   border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   margin-right: 16px;
 }
 
 .social-item .item .text {
-  font-size: 14px;
-  line-height: 20px;
+	font-size: 14px;
+	line-height: 20px;
+	font-style: oblique;
+	color: #22354c;
+	font-weight: 600;
 }
 
 /* =======term and condition======= */
@@ -82,25 +118,26 @@ li {
 }
 
 .section-title .flag-discount {
-  border-radius: 6px 0 0 6px;
-  color: #fff;
-  display: block;
-  padding: 10px 20px;
-  background: #85a833;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
+	border-radius: 6px 0 0 6px;
+	color: #fff;
+	display: block;
+	font-family: 'Caveat', cursive;
+	padding: 10px 20px;
+	background: #85a833;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+	font-size: 24px;
+	font-weight: 400;
+	position: relative;
 }
 
 .term-outer .term-inner .term-content ol li {
-  font-size: 14px;
-  margin-bottom: 8px;
-  list-style: disc;
+	font-size: 13px;
+	margin-bottom: 8px;
+	list-style: disc;
+	font-style: oblique;
 }
-
 .social-outer .social-inner .social-icon ul li img {
   width: 30px;
   height: 30px;
@@ -119,12 +156,9 @@ li {
 }
 
 .main-wrapper .farm-item {
-  padding: 20px 0;
+  padding: 20px;
 }
 
-.farm-item .item {
-  margin-bottom: 30px;
-}
 
 @media(max-width:500px) {
   .farm-outer .farm-item .item {
@@ -137,7 +171,7 @@ li {
 }
 
 .farm-outer .farm-item .item .item-inner {
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   padding: 14px;
   border-radius: 6px;
   margin: 0 6px;
@@ -148,12 +182,14 @@ li {
   width: 100%;
 }
 
-.farm-item .item .item-inner .image-block {
+.farm-item .item .item-inner .image-block ,
+.farm-items .item .item-inner .image-block {
   position: relative;
   overflow: hidden;
 }
 
-.farm-item .item .item-inner .image-block img {
+.farm-item .item .item-inner .image-block img ,
+.farm-items .item .item-inner .image-block img {
   width: 100%;
   height: 280px;
   border-radius: 6px;
@@ -161,17 +197,21 @@ li {
 
 }
 
-.farm-item .item .item-inner .image-block:hover img {
+.farm-item .item .item-inner .image-block:hover img ,
+.farm-items .item .item-inner .image-block:hover img {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
   object-fit: cover;
 }
 
-.farm-item .item {
+.farm-items .item {
   margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-.farm-item .item .item-inner .farm-button .location i {
+.farm-item .item .item-inner .farm-button .location i ,
+.farm-items .item .item-inner .farm-button .location i {
   font-size: 18px;
   color: #85a833;
   background: #e4f1ec;
@@ -186,7 +226,9 @@ li {
 }
 
 .farm-item .item .item-inner .farm-button .booknow,
-.farm-item .item .item-inner .farm-button .location {
+.farm-item .item .item-inner .farm-button .location,
+.farm-items .item .item-inner .farm-button .booknow,
+.farm-items .item .item-inner .farm-button .location {
   color: #85a833;
   background: #e4f1ec;
   cursor: pointer;
@@ -196,21 +238,72 @@ li {
   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
-.farm-item .item .item-inner .farm-button .booknow i {
+.farm-item .item .item-inner .farm-button .booknow i,
+.farm-items .item .item-inner .farm-button .booknow i {
   margin-right: 6px;
 }
 
-.main-wrapper .farm-item .farm-name{
-  font-style: 14px;
-  font-weight: 500;
+.main-wrapper .farm-item .farm-name ,
+.main-wrapper .farm-items .farm-name {
+  font-size: 16px;
+  font-style: oblique;
+  font-weight: 600;
   line-height: 30px;
-  margin:8px 0;
-  color: #85a833!important;
+  margin: 8px 0;
+  color: #85a833 !important;
 }
 
-.main-wrapper .farm-item .farm-name span {
+.main-wrapper .farm-item .farm-name span ,
+.main-wrapper .farm-items .farm-name span {
   font-style: 14px;
   margin-left: 10px;
-  font-weight: 500; 
-color: rgb(208, 111, 111)!important;
+  font-weight: 700;
+  color: #2c3e54 !important;
+  float: right;
+}
+
+.main-wrapper .farm-item .farm-name span i ,
+.main-wrapper .farm-items .farm-name span i {
+  margin-right: 6px;
+  color: red;
+}
+
+.footer-top {
+	padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-top span a {
+	font-size: 12px;
+  color: #22354c;
+  letter-spacing: 1px;
+}
+.footer-top span a:hover{
+  transition: all 0.5s ease-in-out;
+  color: #85a833!important;
+}
+.form-outer {
+	padding: 20px 0;
+}
+.css-z3c6am-MuiFormControl-root-MuiTextField-root,
+.css-165mck1  {
+  width: 100%!important;
+}
+.footer-bottom {
+	padding: 14px 0;
+  background: #b8cb8d;
+  color: #22354c;
+  font-size: 14px;
+}
+
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root{
+  color: #85a833!important;
+}
+.css-vgg6fm-MuiFormControl-root .MuiOutlinedInput-root {
+	height: 43px!important;
+}
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root{
+  top:-14%!important;
+  color:#85a833!important;
 }

@@ -1,39 +1,29 @@
 import React from 'react'
-import Ad1 from '../../src/assets/image/adajan dandi/Ankur villa 3bhk.jpg'
-import Ad2 from '../../src/assets/image/adajan dandi/LEMON VILLA.jpg'
-import Ad3 from '../../src/assets/image/adajan dandi/Pal villa. Dandi rod.jpg'
-function AdajanDandi() {
+import Ahmedabad1 from '../..//src/assets/image/ahemedabad/ROYAL VILLA AD...jpg'
 
-  const AdajanDandi=[
-    {
-      id: 1,
-      Farm_name: "Ankur villa 3bhk",
-      Farm_image: Ad1,
-      Mobile_no: "90819 26237",
-      city: "Adajan & Dandi"
-    },
-    {
-      id: 2,
-      Farm_name: "Lemon Villa",
-      Farm_image: Ad2,
-      Mobile_no: "90819 26237",
-      city: "Adajan & Dandi"
-    },
-    {
-      id: 3,
-      Farm_name: "Pal villa",
-      Farm_image: Ad3,
-      Mobile_no: "90819 26237",
-      city: "Adajan & Dandi"
-    }
-  ]
+
+function Ahemedabad() {
+
+  const Ahmedabad = [
+        {
+          id: 1,
+          Farm_name: "Royal Villa",
+          Farm_image: Ahmedabad1,
+          Mobile_no: "90819 26237",
+          city: "Ahmedabad"
+        }
+      ]
+
+
+
 
   function sendWhatsAppMessage(name, address, mobileNumber) {
     const whatsappMessage = `https://wa.me/9081926237?text=Booking%20Details%0AName:%20${encodeURIComponent(name)}%0AAddress:%20${encodeURIComponent(address)}%0AMobile%20Number:%20${encodeURIComponent(mobileNumber)}`;
 
     window.open(whatsappMessage, '_blank');
   }
-  const renderedFarms = AdajanDandi.map(farm => (
+
+  const renderedFarms = Ahmedabad.map(farm => (
     <div key={farm.id} className="item">
       <div className="item-inner">
         <div className="image-block">
@@ -56,16 +46,13 @@ function AdajanDandi() {
 
   return (
     <div>
-      <div className='main-wrapper'>
         <div className="container">
-          <div className="farm-item my-2">
-            {renderedFarms}
+          <div className="farm-items my-2">
+          {renderedFarms}
           </div>
         </div>
-      </div>
-
     </div>
   )
 }
 
-export default AdajanDandi
+export default Ahemedabad

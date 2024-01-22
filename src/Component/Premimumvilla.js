@@ -91,7 +91,6 @@ function Premimumvilla() {
 
     return (
         <div>
-            <div className='main-wrapper'>
                 <div className="container">
                     <div className="farm-item  my-2">
                         {premiumvilla.map((farmType) => (
@@ -118,7 +117,6 @@ function Premimumvilla() {
                         ))}
                     </div>
                 </div>
-            </div>
         </div>
     )
 }

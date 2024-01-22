@@ -1,24 +1,24 @@
 import React from 'react'
-import maha1 from '../../src/assets/image/mahableswar/Stobery villa.jpg'
+import wada1 from '../../src/assets/image/wada/kavya villa wada.jpg'
 
-function Mahabaleshwar() {
-  const Mahabaleshwar = [
+function Wada() {
+  const wada = [
     {
       id: 1,
-      Farm_name: "Stobery villa",
-      Farm_image: maha1,
+      Farm_name: "kavya villa wada",
+      Farm_image: wada1,
       Mobile_no: "90819 26237",
-      city: "Mahabaleshwar"
+      city: "wada"
     },
   ]
-  
+
   function sendWhatsAppMessage(name, address, mobileNumber) {
     const whatsappMessage = `https://wa.me/9081926237?text=Booking%20Details%0AName:%20${encodeURIComponent(name)}%0AAddress:%20${encodeURIComponent(address)}%0AMobile%20Number:%20${encodeURIComponent(mobileNumber)}`;
 
     window.open(whatsappMessage, '_blank');
-    
   }
-  const renderedFarms = Mahabaleshwar.map(farm => (
+
+  const renderedFarms = wada.map(farm => (
     <div key={farm.id} className="item">
       <div className="item-inner">
         <div className="image-block">
@@ -38,20 +38,15 @@ function Mahabaleshwar() {
       </div>
     </div>
   ));
-
-
   return (
     <div>
-      <div className='main-wrapper'>
-        <div className="container">
-          <div className="farm-item my-2">
-            {renderedFarms}
-          </div>
+      <div className="container">
+        <div className="farm-items my-2">
+          {renderedFarms}
         </div>
       </div>
-
     </div>
   )
 }
 
-export default Mahabaleshwar
+export default Wada

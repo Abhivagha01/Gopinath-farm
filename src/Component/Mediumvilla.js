@@ -212,9 +212,8 @@ function Mediumvilla() {
         window.open(whatsappMessage, '_blank');
     }
     return (
-        <div className='main-wrapper'>
             <div className="container">
-                <div className="farm-item  my-2">
+                <div className="farm-items  my-2">
                     {Mediumvilla.map((farmType) => (
                         farmType.items.map((farm) => (
                             <div key={farm.id} className="item">
@@ -238,7 +237,6 @@ function Mediumvilla() {
                         ))
                     ))}
                 </div>
-            </div>
         </div>
     )
 }

@@ -35,7 +35,7 @@ import rajasthan from '../assets/image/rajasthan/RJ hors villa.jpg'
 import saputara from '../assets/image/saputara/tent City saputara.jpg'
 import wada from '../assets/image/wada/kavya villa wada.jpg'
 import surat from '../assets/image/kamrej/Shubh nivas farm house.jpg'
-function Mainpage() {
+function Home() {
 
   const Imagearray = [
     { image: s1 }, { image: s2 }, { image: s3 }, { image: s4 }, { image: s5 },
@@ -66,13 +66,12 @@ function Mainpage() {
   }
   return (
     <div>
-      <div className="main-wrapper">
         <div className="slider">
           <div className="image">
             <OwlCarousel className='owl-theme' loop margin={10} nav {...slider}>
               {Imagearray.map((item, index) => (
                 <div className="slide-block">
-                  <img key={index} src={item.image} alt={`image-${index + 1}`} />
+                  <img key={index} src={item.image} alt="Slider_image" />
                 </div>
               ))}
             </OwlCarousel>
@@ -168,7 +167,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={ahemedabad} alt="ahemedabad-farmfarm" />
                     </div>
-                    <div className="farm-name">AD Royal villa <span> [Ahemedabad]</span></div>
+                    <div className="farm-name">AD Royal villa <span><i className="fas fa-map-marker-alt"></i>Ahemedabad</span></div>
                   </div>
                 </div>
               </Link>
@@ -178,7 +177,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={lonavala} alt="lonavala-farmfarm" />
                     </div>
-                    <div className="farm-name">Seeya villa <span>[Lonavala]</span></div>
+                    <div className="farm-name">Seeya villa <span><i className="fas fa-map-marker-alt"></i>Lonavala</span></div>
                   </div>
                 </div>
               </Link>
@@ -188,7 +187,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={adajandandi} alt="adajandandi-farmfarm" />
                     </div>
-                    <div className="farm-name">Lemon Villa <span>[Adajan & Dandi]</span></div>
+                    <div className="farm-name">Lemon Villa <span><i className="fas fa-map-marker-alt"></i>Adajan & Dandi</span></div>
                   </div>
                 </div>
               </Link>
@@ -198,7 +197,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={mahabaleswar} alt="mahabaleswar-farmfarm" />
                     </div>
-                    <div className="farm-name">Stobery  Villa <span>[Mahabaleshwar]</span></div>
+                    <div className="farm-name">Stobery  Villa <span><i className="fas fa-map-marker-alt"></i>Mahabaleshwar</span></div>
                   </div>
                 </div>
               </Link>
@@ -208,7 +207,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={navsari} alt="navsari-farmfarm" />
                     </div>
-                    <div className="farm-name">Dream  Villa <span>[Navasari]</span></div>
+                    <div className="farm-name">Dream  Villa <span><i className="fas fa-map-marker-alt"></i>Navasari</span></div>
                   </div>
                 </div>
               </Link>
@@ -218,7 +217,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={rajasthan} alt="rajasthan-farmfarm" />
                     </div>
-                    <div className="farm-name">RJ hors villa <span>[Rajasthan]</span></div>
+                    <div className="farm-name">RJ hors villa <span><i className="fas fa-map-marker-alt"></i>Rajasthan</span></div>
                   </div>
                 </div>
               </Link>
@@ -228,7 +227,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={saputara} alt="saputara-farmfarm" />
                     </div>
-                    <div className="farm-name">Tent City  <span>[Saputara]</span></div>
+                    <div className="farm-name">Tent City  <span> <i className="fas fa-map-marker-alt"></i>Saputara</span></div>
                   </div>
                 </div>
               </Link>
@@ -238,7 +237,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={wada} alt="wada-farmfarm" />
                     </div>
-                    <div className="farm-name">Kavya Villa <span>[Wada]</span></div>
+                    <div className="farm-name">Kavya Villa <span><i className="fas fa-map-marker-alt"></i>Wada</span></div>
                   </div>
                 </div>
               </Link>
@@ -248,7 +247,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={surat} alt="surat-farmfarm" />
                     </div>
-                    <div className="farm-name">Shubh nivas farm house <span>[Surat]</span></div>
+                    <div className="farm-name">Shubh nivas farm house <span><i className="fas fa-map-marker-alt"></i>Surat</span></div>
                   </div>
                 </div>
               </Link>
@@ -288,7 +287,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={highvilla} alt="highvilla-farmfarm" />
                     </div>
-                    <div className="farm-name">Shubh Nivas farm house</div>
+                    <div className="farm-name">Shubh Nivas farm house <span><i class="fas fa-coins" style={{color:'yellow'}}></i>5k to 7k+</span></div>
                   </div>
                 </div>
               </Link>
@@ -307,7 +306,7 @@ function Mainpage() {
                     <div className="image-block">
                       <img src={mediumvilla} alt="medium-farmfarm" />
                     </div>
-                    <div className="farm-name">Ankur Villa 3bhk</div>
+                    <div className="farm-name">Ankur Villa 3bhk <span><i class="fas fa-coins" style={{color:'yellow'}}></i>4k+</span></div>
                   </div>
                 </div>
               </Link>
@@ -315,13 +314,6 @@ function Mainpage() {
           </div>
         </div>
       </div>
-
-
-
-
-
-    </div>
   )
 }
-
-export default Mainpage
+export default Home

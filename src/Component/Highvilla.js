@@ -129,9 +129,8 @@ function Highvilla() {
     }
     return (
         <div>
-            <div className='main-wrapper'>
             <div className="container">
-                <div className="farm-item  my-2">
+                <div className="farm-items  my-2">
                     {Highvilla.map((farmType) => (
                         farmType.items.map((farm) => (
                             <div key={farm.id} className="item">
@@ -156,7 +155,6 @@ function Highvilla() {
                     ))}
                 </div>
             </div>
-        </div>
         </div>
     )
 }

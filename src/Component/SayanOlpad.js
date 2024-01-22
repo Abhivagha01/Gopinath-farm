@@ -138,13 +138,11 @@ function SayanOlpad() {
 
   return (
     <div>
-      <div className='main-wrapper'>
         <div className="container">
-          <div className="farm-item my-2">
+          <div className="farm-items my-2">
             {renderedFarms}
           </div>
         </div>
-      </div>
     </div>
   )
 }

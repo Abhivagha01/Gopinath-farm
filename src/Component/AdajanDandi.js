@@ -1,27 +1,39 @@
 import React from 'react'
-import wada1 from '../../src/assets/image/wada/kavya villa wada.jpg'
+import Ad1 from '../../src/assets/image/adajan dandi/Ankur villa 3bhk.jpg'
+import Ad2 from '../../src/assets/image/adajan dandi/LEMON VILLA.jpg'
+import Ad3 from '../../src/assets/image/adajan dandi/Pal villa. Dandi rod.jpg'
+function AdajanDandi() {
 
-function Wada() {
-  const wada = [
+  const AdajanDandi = [
     {
       id: 1,
-      Farm_name: "kavya villa wada",
-      Farm_image: wada1,
+      Farm_name: "Ankur villa 3bhk",
+      Farm_image: Ad1,
       Mobile_no: "90819 26237",
-      city: "wada"
+      city: "Adajan & Dandi"
     },
+    {
+      id: 2,
+      Farm_name: "Lemon Villa",
+      Farm_image: Ad2,
+      Mobile_no: "90819 26237",
+      city: "Adajan & Dandi"
+    },
+    {
+      id: 3,
+      Farm_name: "Pal villa",
+      Farm_image: Ad3,
+      Mobile_no: "90819 26237",
+      city: "Adajan & Dandi"
+    }
   ]
-
-
-
 
   function sendWhatsAppMessage(name, address, mobileNumber) {
     const whatsappMessage = `https://wa.me/9081926237?text=Booking%20Details%0AName:%20${encodeURIComponent(name)}%0AAddress:%20${encodeURIComponent(address)}%0AMobile%20Number:%20${encodeURIComponent(mobileNumber)}`;
 
     window.open(whatsappMessage, '_blank');
   }
-
-  const renderedFarms = wada.map(farm => (
+  const renderedFarms = AdajanDandi.map(farm => (
     <div key={farm.id} className="item">
       <div className="item-inner">
         <div className="image-block">
@@ -41,17 +53,16 @@ function Wada() {
       </div>
     </div>
   ));
+
   return (
     <div>
-      <div className='main-wrapper'>
-        <div className="container">
-          <div className="farm-item my-2">
-            {renderedFarms}
-          </div>
+      <div className="container">
+        <div className="farm-items my-2">
+          {renderedFarms}
         </div>
       </div>
     </div>
   )
 }
 
-export default Wada
+export default AdajanDandi

@@ -1,31 +1,29 @@
 import React from 'react'
-import sapu1 from '../../src/assets/image/saputara/tent City saputara.jpg'
-import sapu2 from '../../src/assets/image/saputara/Vanvaso saputara.jpg'
+import Raja1 from '../../src/assets/image/rajasthan/RJ hors villa.jpg'
 
-function Saputara() {
-  const saputara = [
+
+function Rajasthan() {
+
+  const Rajasthan = [
     {
       id: 1,
-      Farm_name: "Tent City saputara ",
-      Farm_image: sapu1,
+      Farm_name: "RJ hors villa",
+      Farm_image: Raja1,
       Mobile_no: "90819 26237",
-      city: "Saputara"
-    },
-    {
-      id: 2,
-      Farm_name: "Vanvaso saputara",
-      Farm_image: sapu2,
-      Mobile_no: "90819 26237",
-      city: "Saputara"
-    },
+      city: "Rajasthan"
+    }
   ]
+
+
+
+
   function sendWhatsAppMessage(name, address, mobileNumber) {
     const whatsappMessage = `https://wa.me/9081926237?text=Booking%20Details%0AName:%20${encodeURIComponent(name)}%0AAddress:%20${encodeURIComponent(address)}%0AMobile%20Number:%20${encodeURIComponent(mobileNumber)}`;
 
     window.open(whatsappMessage, '_blank');
   }
 
-  const renderedFarms = saputara.map(farm => (
+  const renderedFarms = Rajasthan.map(farm => (
     <div key={farm.id} className="item">
       <div className="item-inner">
         <div className="image-block">
@@ -47,16 +45,13 @@ function Saputara() {
   ));
   return (
     <div>
-      <div className='main-wrapper'>
-        <div className="container">
-          <div className="farm-item my-2">
-            {renderedFarms}
-          </div>
+      <div className="container">
+        <div className="farm-items my-2">
+          {renderedFarms}
         </div>
       </div>
-
     </div>
   )
 }
 
-export default Saputara
+export default Rajasthan
