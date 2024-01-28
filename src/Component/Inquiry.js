@@ -92,17 +92,30 @@ const Inquiry = () => {
         e.preventDefault();
 
         if (validateForm()) {
-            const YOUR_SERVICE_ID = 'service_1yqrkte';
-            const YOUR_TEMPLATE_ID = 'template_yigxtvs';
-            const YOUR_PUBLIC_KEY = 'bUkDYKagUExt2cwJN';
+            const YOUR_SERVICE_ID = 'service_ebfr2rk';
+            const YOUR_TEMPLATE_ID = 'template_4oqcwsl';
+            const YOUR_PUBLIC_KEY = 'ND8LZ2XyL_4B-BE3Z';
 
             try {
+
                 const templateParams = {
                     Fullname: inquiry.Fullname,
                     mo_Number: inquiry.mo_Number,
                     email: inquiry.email,
-                    date: inquiry.date,
+                    date: formatDate(inquiry.date),
                 };
+                function formatDate(inputDate) {
+                    const originalDate = new Date(inputDate);
+                
+                    const day = originalDate.getDate();
+                    const month = originalDate.getMonth() + 1; 
+                    const year = originalDate.getFullYear();
+                
+                    const formattedDay = (day < 10) ? `0${day}` : day;
+                    const formattedMonth = (month < 10) ? `0${month}` : month;
+                
+                    return `${formattedDay}-${formattedMonth}-${year}`;
+                }
 
                 console.log('Template Params:', templateParams);
 

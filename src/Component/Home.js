@@ -111,7 +111,7 @@ function Home() {
                     </Link>
                   </li>
                   <li className='mx-2 my-2'>
-                    <Link to="https://www.google.com/maps/place/Kanbhi,+Gujarat+394540/@21.3924,72.8342,17z/data=!4m6!3m5!1s0x3be036f162f6f0c3:0x7832a50bfcb78369!8m2!3d21.3923627!4d72.8341927!16s%2Fg%2F1hhw1wd9j?hl=en&entry=ttu">
+                    <Link to="https://maps.app.goo.gl/jDCnCEgdSdEJrztt8">
                       <img src={social6} alt="location" />
                     </Link>
                   </li>
@@ -120,7 +120,7 @@ function Home() {
               <div className="social-item">
                 <div className="item d-flex align-items-center justify-content-flex-start mb-2">
                   <div className="icon">  <i class="fas fa-map-marker-alt mb-2"></i></div>
-                  <div className="text">Kanbhi, Gujarat 394540, India</div>
+                  <div className="text">G-4 Hilton Business centre,new katargam ,variyav road surat-395006.</div>
                 </div>
                 <div className="item d-flex  align-items-center justify-content-flex-start mb-2">
                   <div className="icon">  <i class="fas fa-phone"></i></div>
